@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Elite Power Washing Co</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, sans-serif;
+    line-height:1.6;
+    color:#333;
+}
+
+.hero{
+    background:
+    linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)),
+    url('hero.jpg');
+    background-size:cover;
+    background-position:center;
+    min-height:90vh;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+
+    text-align:center;
+    color:white;
+    padding:20px;
+}
+
+.hero h1{
+    font-size:4rem;
+    margin-bottom:15px;
+}
+
+.hero p{
+    font-size:1.4rem;
+    margin-bottom:25px;
+}
+
+.btn{
+    background:#2196f3;
+    color:white;
+    text-decoration:none;
+    padding:15px 30px;
+    border-radius:6px;
+    font-weight:bold;
+}
+
+section{
+    padding:70px 20px;
+}
+
+.container{
+    max-width:1100px;
+    margin:auto;
+}
+
+h2{
+    text-align:center;
+    color:#0d47a1;
+    margin-bottom:30px;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.card{
+    background:#f4f4f4;
+    padding:25px;
+    border-radius:10px;
+    text-align:center;
+}
+
+.gallery{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.gallery img{
+    width:100%;
+    border-radius:10px;
+    display:block;
+}
+
+.review{
+    background:#f4f4f4;
+    padding:20px;
+    border-radius:10px;
+    margin-bottom:15px;
+}
+
+form{
+    max-width:700px;
+    margin:auto;
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+
+input,
+textarea,
+select{
+    padding:12px;
+    border:1px solid #ccc;
+    border-radius:5px;
+    font-size:16px;
+}
+
+button{
+    background:#0d47a1;
+    color:white;
+    border:none;
+    padding:15px;
+    border-radius:5px;
+    cursor:pointer;
+    font-size:16px;
+}
+
+button:hover{
+    opacity:.9;
+}
+
+#quote-now{
+    background:#0d47a1;
+    color:white;
+}
+
+.quote-box{
+    background:white;
+    color:black;
+    max-width:700px;
+    margin:auto;
+    padding:30px;
+    border-radius:10px;
+}
+
+.quote-box ul{
+    list-style:none;
+    padding:0;
+}
+
+.quote-box li{
+    margin:10px 0;
+}
+
+.quote-box a{
+    color:#0d47a1;
+    font-weight:bold;
+    text-decoration:none;
+}
+
+.quote-box a:hover{
+    text-decoration:underline;
+}
+
+footer{
+    background:#111;
+    color:white;
+    text-align:center;
+    padding:25px;
+}
+
+@media(max-width:768px){
+
+    .hero h1{
+        font-size:2.5rem;
+    }
+
+    .hero p{
+        font-size:1.1rem;
+    }
+
+}
+
+</style>
+</head>
+<body>
+
+<header class="hero">
+
+    <h1>Elite Power Washing Co</h1>
+
+    <p>
+        Professional Power Washing For Homes & Businesses
+    </p>
+
+    <a href="#quote-form" class="btn">
+        Get Your Free Quote
+    </a>
+
+</header>
+
+<section>
+<div class="container">
+
+    <h2>About Us</h2>
+
+    <p style="text-align:center;">
+        Elite Power Washing Co provides professional exterior cleaning services
+        for residential and commercial properties. We help remove dirt, grime,
+        mold, mildew, and stains to restore your property's appearance and
+        boost curb appeal.
+    </p>
+
+</div>
+</section>
+
+<section>
+<div class="container">
+
+    <h2>Our Services</h2>
+
+    <div class="cards">
+
+        <div class="card">
+            <h3>House Washing</h3>
+            <p>Restore the beauty of your home's exterior.</p>
+        </div>
+
+        <div class="card">
+            <h3>Driveway Cleaning</h3>
+            <p>Remove stains, dirt, and years of buildup.</p>
+        </div>
+
+        <div class="card">
+            <h3>Deck & Patio Cleaning</h3>
+            <p>Bring outdoor living spaces back to life.</p>
+        </div>
+
+        <div class="card">
+            <h3>Commercial Cleaning</h3>
+            <p>Keep your business property looking professional.</p>
+        </div>
+
+    </div>
+
+</div>
+</section>
+
+<section>
+<div class="container">
+
+    <h2>Before & After Results</h2>
+
+    <div class="gallery">
+
+        <img src="before1.jpg" alt="Before Cleaning">
+
+        <img src="after1.jpg" alt="After Cleaning">
+
+        <img src="before2.jpg" alt="Before Cleaning">
+
+        <img src="after2.jpg" alt="After Cleaning">
+
+    </div>
+
+</div>
+</section>
+
+<section>
+<div class="container">
+
+    <h2>Customer Reviews</h2>
+
+    <div class="review">
+        ⭐⭐⭐⭐⭐
+        <p>“Amazing work! My driveway looks brand new.”</p>
+    </div>
+
+    <div class="review">
+        ⭐⭐⭐⭐⭐
+        <p>“Fast, professional, and affordable service.”</p>
+    </div>
+
+    <div class="review">
+        ⭐⭐⭐⭐⭐
+        <p>“Highly recommend Elite Power Washing Co.”</p>
+    </div>
+
+</div>
+</section>
+
+<section id="quote-form">
+<div class="container">
+
+    <h2>Request A Free Quote</h2>
+
+    <form action="https://formsubmit.co/Elitepwc@outlook.com" method="POST">
+
+        <input
+            type="text"
+            name="name"
+            placeholder="Full Name"
+            required>
+
+        <input
+            type="email"
+            name="email"
+            placeholder="Email Address"
+            required>
+
+        <input
+            type="tel"
+            name="phone"
+            placeholder="Phone Number">
+
+        <select name="service">
+            <option>House Washing</option>
+            <option>Driveway Cleaning</option>
+            <option>Deck Cleaning</option>
+            <option>Patio Cleaning</option>
+            <option>Commercial Power Washing</option>
+            <option>Other</option>
+        </select>
+
+        <textarea
+            name="details"
+            rows="6"
+            placeholder="Tell us about your project..."></textarea>
+
+        <button type="submit">
+            Get My Free Quote
+        </button>
+
+    </form>
+
+</div>
+</section>
+
+<section id="quote-now">
+<div class="container">
+
+    <h2 style="color:white;">Get A Quote Now</h2>
+
+    <div class="quote-box">
+
+        <p>
+            <strong>Email:</strong>
+            <a href="mailto:Elitepwc@outlook.com">
+                Elitepwc@outlook.com
+            </a>
+        </p>
+
+        <br>
+
+        <h3>Owners</h3>
+
+        <ul>
+            <li>Charlie</li>
+            <li>Holly</li>
+            <li>Julian</li>
+        </ul>
+
+        <br>
+
+        <h3>Call Us</h3>
+
+        <p>
+            <strong>Charlie:</strong>
+            <a href="tel:6059292864">
+                (605) 929-2864
+            </a>
+        </p>
+
+        <p>
+            <strong>Holly:</strong>
+            Number Coming Soon
+        </p>
+
+        <p>
+            <strong>Julian:</strong>
+            <a href="tel:6059618152">
+                (605) 961-8152
+            </a>
+        </p>
+
+    </div>
+
+</div>
+</section>
+
+<section>
+<div class="container">
+
+    <h2>Service Area</h2>
+
+    <p style="text-align:center;">
+        Proudly serving residential and commercial customers throughout the
+        surrounding area. Contact us today to see if we service your location.
+    </p>
+
+</div>
+</section>
+
+<footer>
+
+    <p>
+        © 2026 Elite Power Washing Co. All Rights Reserved.
+    </p>
+
+</footer>
+
+</body>
+</html>
